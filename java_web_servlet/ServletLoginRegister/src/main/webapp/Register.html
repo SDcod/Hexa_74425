@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>User Register</title>
+	<style>
+		body {
+			display: flex;
+			flex-direction:column;
+			align-items: center;
+			justify-content: center;
+			height: 95vh;
+			background-color: rgb(128, 128, 255);
+			}
+		body > h1{
+		
+			color:white;
+		}
+
+		#reg_form {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			background-color: white;
+			padding: 1rem;
+			border-radius: 10px;
+			box-shadow: 0px 0px 20px rgb(0, 0, 0);
+				}
+		
+
+		.login_link {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+		}
+
+		.login_link>a {
+			color: black;
+			text-decoration: none;
+			border: 1px solid black;
+			padding: 5px 8px;
+			border-radius: 14px;
+
+		}
+	</style>
+</head>
+
+<body>
+<h1 center>Register Page</h1>
+	<form id="reg_form" action="UserRegister">
+		Name: <input type="text" id="user_name" name="user_name"><br>
+		password : <input type="password" id="user_pass" name="user_pass"><br>
+		phone no. : <input type="number" id="user_phone" name="user_phone"><br>
+		email: <input type="email" id="user_email" name="user_email"><br>
+
+		<input style="margin:5px;" type="submit" value="Register">
+		<input style="margin:5px;" type="reset" value="cancel">
+
+
+		<div class="login_link">
+			<p>Already have an account?</p>
+			<a href="Login.html">login</a>
+		</div>
+	</form>
+</body>
+
+</html>
